@@ -1,4 +1,17 @@
+def setup():
+    # Setup for the settlers game
+    input("Do you wanna play a full game of settlers or ")
+
 class Mechanics:
+    # The basic variables required for the game.
+    victory_Points = int
+    wood = int
+    livestock = int
+    clay = int
+    stone = int
+    hay = int
+    roads = int
+
     @staticmethod
     def dice_roll():
         import random
