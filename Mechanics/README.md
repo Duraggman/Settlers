@@ -5,7 +5,7 @@ mechanics that will be required for us to complete the game Settlers.
 ## Classes
 
 ## Functions
-* Dice Roll
+* Dice Roll- Emulates the the dice roll in Catan.
 
 ## Methods
 
