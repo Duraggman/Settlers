@@ -6,5 +6,4 @@ class TestMechanics(unittest.TestCase):
         import random
         roll = random.randint(1, 6)
         answers = [1, 2, 3, 4, 5, 6]
-        self.assertIn(roll, answers) # checks that only numbers possible to roll are the numbers that
-
+        self.assertIn(roll, answers)  # checks that only numbers possible to roll are the numbers that
