@@ -1,5 +1,8 @@
 def game_type():  # game type selection.
     """
+    picked: Is only true if the game type has been selected.
+    full_or_quick: decides which game type has been selected. (Either full or quick.)
+
     Allows the player to pick what type of game the want to play. In the UI version of the game this function may be
     easier using two buttons to input this decision.
     This function will be used in the startup sequence of the game.
@@ -24,6 +27,8 @@ def game_type():  # game type selection.
 def timer():  # The player selects how long they want the quick game to last.
     """
     Allows the player to decide how long the want the quick game to last in minutes.
+    time: How long the quick game should last in minutes
+
     :return: how long the game will last in minutes.
     """
     picked = False
@@ -49,9 +54,9 @@ def num_of_players():  # selecting the number of players that will be in the gam
 
     :return: Ais and players
     """
-    Ais = 0  # number of Ais in the game 
-    players = 0  # number of players
-    picked = False  # Controls if the 
+    Ais = 0
+    players = 0
+    picked = False
     while not picked:
         try:
             players = int(input("How many players are there?"))

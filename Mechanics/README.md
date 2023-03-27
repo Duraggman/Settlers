@@ -47,4 +47,22 @@ game.
 
 #### Variables
 
+### Full Game
+This classes controls the state of the game if the player decides to pick the full game option, when asked in the setup
+section of the game. 
+#### Functions
+
+#### Methods
+
+#### Variables
+
+### Timed Game
+This classes controls the state of the game if the player decides to pick the timed game option, when asked in the setup
+section of the game. 
+#### Functions
+
+#### Methods
+
+#### Variables
+
 
