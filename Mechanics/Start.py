@@ -1,3 +1,4 @@
+from Player import Player
 def game_type():  # game type selection.
     """
     picked: Is only true if the game type has been selected.
@@ -85,9 +86,22 @@ def num_of_players():  # selecting the number of players that will be in the gam
 
 
 class Start:
+    Players = []
     gameType = game_type()
     if gameType:
         pass
     else:
         amount_of_time = timer()
     num_players = num_of_players()
+    namePicked = False  # Checks if the player has picked a valid name.
+    for i in range(num_players):
+        while not namePicked:
+            name = input("what is the players name?: ")  #
+            if len(name) > 10:
+                print("Player's names can only be 10 characters")
+            elif len(name) == 0 or name == " ":  # check if there's a better way to check for empty strings
+                print("No name has been entered.")
+            else:
+                namePicked = True
+            Players.append((name, Player))  # holds the player's number and player object in a list.
+
